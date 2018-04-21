@@ -14,6 +14,7 @@ public class Main {
         quadPolynomial.a = 3;
         quadPolynomial.b = 2;
         quadPolynomial.c = 5;
+        quadPolynomial.result(3);
         assert(quadPolynomial.result(3) == 92);
 
         // 问题二：实现一个整数数组类 MyArray, 里面包含一个数组， 有5种操作：
@@ -35,15 +36,26 @@ public class Main {
         myArray.add(2);
         myArray.add(7);
 
+        int [] asc =  myArray.sort();
+
+        myArray.max();
         assert(myArray.max() == 9);
 
-        myArray.add(10);
+//        myArray.add(10);
         assert(myArray.max() == 10);
 
-        myArray.sort();
+        int arrLength = myArray.length();
+        System.out.println("4. 获取数组长度:"+ arrLength);
+
+
+//        myArray.sort();
         int[] output = myArray.output();
-        for (int i = 1; i <= 10; i++) {
+        for (int i = 0; i <myArray.length(); i++) {
             assert(output[i] == (i + 1));
+            System.out.print(output[i]);
+            if(i < myArray.length()){
+                System.out.print(", ");
+            }
         }
     }
 }
