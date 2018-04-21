@@ -1,6 +1,6 @@
 package com.littlejava;
 //import java.util.ArrayList;
-
+//code
 public class MyArray {
 
     int [] array = new int[100];

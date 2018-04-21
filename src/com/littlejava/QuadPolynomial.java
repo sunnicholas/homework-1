@@ -1,5 +1,5 @@
 package com.littlejava;
-
+//code
 public class QuadPolynomial {
     public int a;
     public int b;
